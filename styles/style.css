@@ -1,0 +1,267 @@
+body {
+  min-width: 1100px;
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+}
+.header {
+  background: #fff url(../images/background_header.svg) no-repeat center / cover;
+  position: relative;
+  max-height: 800px;
+  height: 100vh;
+}
+.logo {
+  position: fixed;
+  width: 105px;
+  height: 39px;
+  z-index: 1;
+  top: 30px;
+  left: 30px;
+  z-index: 2;
+}
+.nav {
+  position: fixed;
+  z-index: 1;
+  top: 30px;
+  right: 26px;
+  z-index: 2;
+}
+.nav-links {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+.nav-link {
+  flex-direction: row;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:visited {
+  color: inherit;
+}
+a:hover {
+  color: #ff976b;
+}
+.header-title {
+  position: absolute;
+  max-width: 709px;
+  left: 80px;
+  top: 252px;
+  font-size: 58px;
+  line-height: 72px;
+  letter-spacing: -1px;
+  height: auto;
+}
+.span-accent {
+  display: block;
+  font-family: "Noto Serif", "Times New Roman", sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  color: #ff976b;
+  font-size: 58px;
+  line-height: 72px;
+  letter-spacing: normal;
+}
+.header-description {
+  position: absolute;
+  max-width: 683px;
+  left: 80px;
+  top: 432px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+.header-image {
+  position: absolute;
+  width: 646px;
+  height: 568px;
+  top: 124px;
+  right: 5px;
+}
+.header-info {
+  position: absolute;
+  bottom: 40px;
+  right: 80px;
+  left: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.header-hours {
+  align-self: self-start;
+}
+.address {
+  align-self: self-end;
+}
+.info-text {
+  color: #6f6f6f;
+}
+
+/* Form */
+
+.reservation {
+  background: #ffd6c5 url(../images/background_reservation.svg) no-repeat
+    center / cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 120px;
+}
+.reservation__form {
+  background: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 385px;
+}
+.reservation__title {
+  padding-top: 100px;
+  padding-bottom: 80px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+}
+.reservation__fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.reservation__label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 32px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: normal;
+}
+.reservation__input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #838383;
+  border-radius: 4px;
+  color: #838383;
+  line-height: 20px;
+  font-family: inherit;
+  font-size: inherit;
+}
+.reservation__button {
+  height: 60px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  background-color: #e96e3a;
+  border-radius: 4px;
+  line-height: 20px;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 500;
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0s;
+}
+.reservation__button:hover {
+  opacity: 0.7;
+}
+.checkbox-label {
+  padding-top: 32px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  gap: 12px;
+}
+.checkbox {
+  border-radius: 2px;
+  padding: 20px 20px;
+  border: 1px solid #4f4f4f;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+/* contacts */
+
+.footer {
+  background: #d35722;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+  padding: 60px 80px 170px 80px;
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 2;
+}
+.footer__logo {
+  width: 105px;
+  height: 39px;
+}
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0;
+}
+.footer__links-title {
+  color: white;
+  font-weight: bold;
+  padding-bottom: 4px;
+  margin: 0;
+  list-style-type: none;
+}
+.footer__link {
+  color: white;
+  font-weight: normal;
+  list-style-type: none;
+}
+.footer__link a:visited {
+  color: white;
+}
+.footer__link a:hover {
+  color: #ffd6c5;
+}
+.footer__link a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer__social-logo {
+  width: 16px;
+  height: 16px;
+  color: #f2f2f2;
+}
+.footer__circle {
+  background-color: #e96e3a;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  z-index: 1;
+  position: absolute;
+  top: -128px;
+  left: -14px;
+}
+
+/*copyright*/
+
+.copyright {
+  position: absolute;
+  bottom: 60px;
+  left: 80px;
+  font-weight: normal;
+  color: white;
+}
