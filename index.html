@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mariana@</title>
+    <title>JOSE DAVID DUARTE MARTINEZ</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,7 +18,128 @@
     <link rel="icon" href="favicon.ico" />
   </head>
   <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__intro">
+          <h1 class="header__name">JOSE DAVID DUARTE</h1>
+          <p class="header__role">Web Developer</p>
 
+          <p class="header__bio">
+            Soy un desarrollador web en formación con una gran curiosidad por la
+            tecnología y la resolución de problemas. Me gusta aprender cosas
+            nuevas, crear interfaces limpias y funcionales, y enfrentar cada
+            proyecto como una oportunidad para mejorar mis habilidades.
+            Actualmente estoy construyendo mi portafolio mientras continúo
+            creciendo como desarrollador.
+          </p>
+
+          <nav class="header__links links">
+            <a href="#" class="links__item">Descargar CV</a>
+            <a href="#" class="links__item">Enlace a GitHub</a>
+            <a href="#" class="links__item">Hablemos</a>
+          </nav>
+        </div>
+
+        <div class="header__media">
+          <img
+            class="header__photo"
+            src="images/photo.jpg"
+            alt="JOSE DAVID DUARTE MARTINEZ"
+          />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="skills" aria-labelledby="skills-title">
+        <h2 id="skills-title" class="skills__title">
+          Habilidades y herramientas
+        </h2>
+
+        <ul class="skills__list">
+          <li class="skills__item">
+            <img src="images/icons/html5.svg" alt="HTML5" />
+          </li>
+          <li class="skills__item">
+            <img src="images/icons/css3.svg" alt="CSS3" />
+          </li>
+          <li class="skills__item">
+            <img src="images/icons/javascript.svg" alt="JavaScript" />
+          </li>
+          <li class="skills__item">
+            <img src="images/icons/figma.svg" alt="Figma" />
+          </li>
+          <li class="skills__item">
+            <img src="images/icons/github.svg" alt="GitHub" />
+          </li>
+        </ul>
+      </section>
+
+      <section class="projects" aria-labelledby="projects-title">
+        <h2 id="projects-title" class="projects__title">
+          Proyectos destacados
+        </h2>
+
+        <div class="projects__grid">
+          <article class="project-card">
+            <a class="project-card__media" href="#">
+              <img src="images/project-1.jpg" alt="Nombre del proyecto 1" />
+            </a>
+
+            <div class="project-card__body">
+              <ul class="project-card__tags">
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+
+              <h3 class="project-card__title">Nombre del proyecto 1</h3>
+              <p class="project-card__description">
+                Breve descripción del proyecto: qué resolviste, con qué
+                herramientas y cuál fue el resultado.
+              </p>
+
+              <div class="project-card__links links">
+                <a href="#" class="links__item">Demo en vivo</a>
+                <a href="#" class="links__item">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <a class="project-card__media" href="#">
+              <img src="images/project-2.jpg" alt="Nombre del proyecto 2" />
+            </a>
+
+            <div class="project-card__body">
+              <ul class="project-card__tags">
+                <li>JS</li>
+              </ul>
+
+              <h3 class="project-card__title">Nombre del proyecto 2</h3>
+              <p class="project-card__description">Descripción del proyecto.</p>
+
+              <div class="project-card__links links">
+                <a href="#" class="links__item">Demo en vivo</a>
+                <a href="#" class="links__item">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contacto">
+      <h2 class="footer__title">Contacto</h2>
+      <a class="footer__email" href="mailto:tuemail@ejemplo.com"
+        >tuemail@ejemplo.com</a
+      >
+
+      <ul class="footer__social">
+        <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+        <li><a href="#" aria-label="Facebook">Facebook</a></li>
+        <li><a href="#" aria-label="Instagram">Instagram</a></li>
+        <li><a href="#" aria-label="X">X</a></li>
+      </ul>
     </footer>
   </body>
 </html>
