@@ -95,17 +95,106 @@ body {
   height: 500px;
   object-fit: cover;
 }
+
+/* temporal */
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px; /* photo ↔ text column */
+}
+
+.header__intro {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__intro > * {
+  margin: 0;
+}
+
+.header__name {
+  margin-bottom: 15px; /* name → role */
+}
+
+.header__role,
+.header__bio {
+  margin-bottom: 30px; /* role → bio, bio → links */
+}
+
+.header__media {
+  flex-shrink: 0;
+}
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 89px 120px 0; /* top | right/left | bottom */
+}
+
+.skills {
+  margin-top: 110px; /* space from the 3 links above down to this title */
+}
+/* Skills */
+
+.skills__title {
+  margin: 0 0 50px; /* 50px distance between title and icons */
+}
+
+.skills__list {
+  display: flex;
+  align-items: center;
+  gap: 180px; /* fixed 180px between every icon */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skills__item img {
+  width: 50px;
+  height: auto; /* keeps each icon's natural proportions */
+}
+
 /* Form */
 
 /* contacts */
 
 .footer {
-  background: #fff url(../images/background_footer.svg) no-repeat center / cover;
-  position: relative;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 0;
 }
 
+.footer__title {
+  margin: 0 0 20px; /* title → email */
+  padding-bottom: 8px;
+  border-bottom: 2px solid #3b82f6;
+  display: inline-block;
+}
+
+.footer__email {
+  display: block;
+  margin: 0 0 30px; /* email → icons */
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+.footer__social {
+  display: flex;
+  gap: 80px; /* gap between icons */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__social img {
+  width: 24px;
+  height: 24px;
+}
 /*copyright*/
 
 .copyright {
