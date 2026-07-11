@@ -18,14 +18,13 @@ Contacto: acceso rápido a mi correo electrónico y redes sociales.
 
 # Tecnologías y conceptos utilizados
 
-HTML5
-CSS3
-Metodología BEM para la organización de las clases
-Flexbox para la distribución del contenido
-Media queries para adaptar el diseño a diferentes tamaños de pantalla (768 px y 320 px)
-Gradientes (radial-gradient y linear-gradient) para el fondo y algunos detalles visuales
-@font-face con fuentes autoalojadas (Open Sans y Archivo Black en formatos .woff y .woff2)
-normalize.css junto con un reset personalizado para mejorar la consistencia entre navegadores
-Demo
+- HTML5
+- CSS3
+- Flexbox
+- Metodología BEM
+- Media queries
+- @font-face (Open Sans y Archivo Black)
+- Gradientes CSS (linear-gradient y radial-gradient)
+- normalize.css
 
 🔗 GitHub Pages: https://david-dev009.github.io/web_project_portfolio_es/

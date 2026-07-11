@@ -31,7 +31,7 @@
 }
 
 @font-face {
-  font-family: "Archivo";
+  font-family: "Archivo Black";
   src:
     url("../fonts/ArchivoBlack-Regular.woff2") format("woff2"),
     url("../fonts/ArchivoBlack-Regular.woff") format("woff");
@@ -88,7 +88,7 @@ body {
 }
 
 .header__name {
-  font-family: "Archivo", "Arial", sans-serif;
+  font-family: "Archivo Black", "Arial", sans-serif;
   font-weight: 400;
   font-size: 72px;
   line-height: 100%;
@@ -203,7 +203,7 @@ body {
 
 .skills__title,
 .projects__title {
-  font-family: "Archivo", "Arial", sans-serif;
+  font-family: "Archivo Black", "Arial", sans-serif;
   font-weight: 400;
   font-size: 40px;
   margin: 0 0 50px;
@@ -273,6 +273,10 @@ body {
   margin: 0 0 20px;
 }
 
+.project-card__description + .project-card__description {
+  margin-top: 1em;
+}
+
 .project-card__links {
   display: flex;
   gap: 20px;
@@ -290,7 +294,7 @@ body {
 }
 
 .footer__title {
-  font-family: "Archivo", "Arial", sans-serif;
+  font-family: "Archivo Black", "Arial", sans-serif;
   font-weight: 400;
   font-size: 40px;
   margin: 0 0 20px;
