@@ -323,7 +323,7 @@ body {
 
 /*///////Media Querie//////////*/
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   /* Header */
   .header {
     padding-top: 40px;
@@ -384,7 +384,7 @@ body {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 767px) {
   /* Header */
   .header {
     padding-top: 20px;
