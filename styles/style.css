@@ -92,7 +92,6 @@ body {
   font-weight: 400;
   font-size: 72px;
   line-height: 100%;
-  color: #ffffff;
   margin-bottom: 15px; /* name → role */
 }
 
@@ -109,8 +108,6 @@ body {
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.5;
-  color: #ffffff;
   margin-bottom: 30px; /* bio → links */
 }
 
@@ -236,8 +233,8 @@ body {
 }
 
 .project-card__media > img {
-  width: 590px;
-  height: 330px;
+  width: 100%;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
   display: block;
 }
@@ -375,7 +372,7 @@ body {
   }
 
   .project-card {
-    width: 688px;
+    width: 100%;
   }
 
   .project-card__media > img {
@@ -462,7 +459,7 @@ body {
   }
 
   .project-card {
-    width: 280px;
+    width: 100%;
   }
 
   .project-card__media > img {
