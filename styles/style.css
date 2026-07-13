@@ -374,11 +374,6 @@ body {
   .project-card {
     width: 100%;
   }
-
-  .project-card__media > img {
-    width: 688px;
-    height: 330px;
-  }
 }
 
 @media (max-width: 767px) {
@@ -460,11 +455,6 @@ body {
 
   .project-card {
     width: 100%;
-  }
-
-  .project-card__media > img {
-    width: 280px;
-    height: 160px;
   }
 
   .project-card__tags img {
