@@ -181,21 +181,16 @@ body {
 
 .skills__list {
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
-  gap: 180px; /* fixed 180px between every icon */
+  justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
-.skills__item:nth-child(-n + 2) img {
-  width: 50px;
-  height: 57px; /* HTML5, CSS3 */
-}
-
-.skills__item:nth-child(n + 3) img {
-  width: 50px;
-  height: 50px; /* JS, Git, GitHub, ChatGPT */
+.skills__item img {
+  width: clamp(30px, 4vw, 50px);
+  height: auto;
 }
 
 .skills__title,
@@ -225,6 +220,8 @@ body {
 .project-card {
   width: 590px;
   background-color: #0d0d0d;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card__media {
@@ -264,10 +261,17 @@ body {
 
 .project-card__body {
   padding: 30px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .project-card__title {
   margin: 0 0 20px;
+}
+
+.project-card__description:last-of-type {
+  flex-grow: 1;
 }
 
 .project-card__description + .project-card__description {
@@ -277,7 +281,7 @@ body {
 .project-card__links {
   display: flex;
   gap: 20px;
-  margin-top: 30px; /* push links to the bottom of the card */
+  margin-top: 30px;
 }
 
 /* contacts */
@@ -287,7 +291,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 40px 0;
+  padding: 100px 0;
 }
 
 .footer__title {
@@ -337,31 +341,23 @@ body {
   }
 
   /* Skills */
+
   .skills {
     margin-top: 80px;
     padding-inline: 40px;
+  }
+
+  .skills__list {
+    justify-content: space-between;
+    gap: 0;
   }
 
   .skills__title {
     margin-bottom: 40px;
   }
 
-  .skills__list {
-    justify-content: flex-start;
-    gap: 11%;
-  }
-
-  .skills__item:nth-child(-n + 2) img {
-    width: 50px;
-    height: 57px;
-  }
-
-  .skills__item:nth-child(n + 3) img {
-    width: 50px;
-    height: 50px;
-  }
-
   /* Projects */
+
   .projects {
     padding-inline: 40px;
     margin-top: 80px;
@@ -373,6 +369,11 @@ body {
 
   .project-card {
     width: 100%;
+  }
+
+  .footer {
+    padding-top: 80px;
+    padding-bottom: 102px;
   }
 }
 
@@ -389,6 +390,7 @@ body {
   }
 
   .header__media {
+    width: 100%;
     order: -1;
   }
 
@@ -399,7 +401,7 @@ body {
   }
 
   .header__photo {
-    width: 280px;
+    width: 100%;
     height: 280px;
   }
 
@@ -425,20 +427,10 @@ body {
   }
 
   .skills__list {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    column-gap: 18%;
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    justify-content: space-between;
     row-gap: 30px;
-  }
-
-  .skills__item:nth-child(-n + 2) img {
-    width: 30px;
-    height: 34px;
-  }
-
-  .skills__item:nth-child(n + 3) img {
-    width: 30px;
-    height: 30px;
   }
 
   /* Projects */
@@ -476,6 +468,12 @@ body {
   }
 
   /* Footer */
+
+  .footer {
+    padding-top: 80px;
+    padding-bottom: 90px;
+  }
+
   .footer__title {
     font-size: 28px;
     margin-bottom: 20px;
