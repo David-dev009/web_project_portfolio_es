@@ -363,10 +363,6 @@ body {
     margin-top: 80px;
   }
 
-  .projects__grid {
-    flex-direction: column;
-  }
-
   .project-card {
     width: 100%;
   }
@@ -374,6 +370,10 @@ body {
   .footer {
     padding-top: 80px;
     padding-bottom: 102px;
+  }
+
+  .projects__grid {
+    flex-direction: column;
   }
 }
 
