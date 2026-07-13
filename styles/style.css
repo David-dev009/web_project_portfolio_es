@@ -225,6 +225,8 @@ body {
 .project-card {
   width: 590px;
   background-color: #0d0d0d;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card__media {
@@ -266,7 +268,7 @@ body {
   padding: 30px;
   display: flex;
   flex-direction: column;
-  height: 100%; /* fills the stretched card */
+  flex: 1;
 }
 
 .project-card__title {
